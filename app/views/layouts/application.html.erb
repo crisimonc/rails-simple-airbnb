@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +15,7 @@
   </head>
 
   <body>
+    <%= render "partials/navbar" unless @navbar %>
     <%= yield %>
   </body>
 </html>

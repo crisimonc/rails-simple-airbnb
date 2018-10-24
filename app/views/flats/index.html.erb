@@ -1,0 +1,17 @@
+
+
+<h1><%= "All our Flats (" + @flats.length.to_s + ")" %></h1>
+<div class="flats">
+<% @flats.each do |flat| %>
+    <div class="card">
+	  <p><%= flat.name %></p>      
+	  <p><%= flat.address %></p>
+	  <p><i class="fas fa-users"><%= flat.number_of_guests %></i><i class="fas fa-dollar-sign"><%= flat.price_per_night %></i></p>
+	  <%= link_to "More Info  ", flat_path(flat), class: "more-info" %>
+      <br>
+	  <%= link_to "Edit  ", edit_flat_path(flat), class: "edit" %>
+      <br>
+	  <%= link_to "Remove  ", flat_path(flat), method: :delete, class: "remove" %>
+	</div>
+	<% end %>
+</div>

@@ -1,0 +1,28 @@
+
+<div class="flat">
+	<h1>Your new flat</h1>
+	<%= form_for(@flat) do |f| %>
+	  <%= f.label :name%>
+	  <br>
+	  <%= f.text_field :name%>
+	  <br>
+	  <br>
+	  <%= f.label :address %>
+	  <br>
+	  <%= f.text_field :address %>
+	  <br>
+	  <br>
+	  <%= f.label :price_per_night%>
+	  <br>
+	  <%= f.text_field :price_per_night%>
+	  <br>
+	  <br>
+	  <%= f.label :number_of_guests%>
+	  <br>
+	  <%= f.text_field :number_of_guests%>
+	  <br>
+	  <br>
+	  <%= f.submit %>
+	<% end %>
+</div>
+

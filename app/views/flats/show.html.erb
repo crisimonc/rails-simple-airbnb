@@ -1,0 +1,13 @@
+
+<div class="flat">
+  <h1><%= @flat.name %></h1>
+  <h3><%= @flat.address %></h3>
+    <div class="description">
+      <h2>A little bit more about this flat..</h2>
+	  <p><%= @flat.description %></p>      
+	</div>
+	<div class="details">
+      <h2>Details</h2>
+	  <p><i class="fas fa-users"><%= @flat.number_of_guests %></i><i class="fas fa-dollar-sign"><%= @flat.price_per_night %></i></p>
+	</div>
+</div>
